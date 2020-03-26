@@ -1,0 +1,419 @@
+/*Name: Ashutosh Rao Chawan U
+  ID: 20171CSE0094
+  Sec: 06 CSE 02
+  Disclaimer: There are some unwanted development time codes which I haven't deleted. I have left them there to update it later. Regret any inconvieniences caused.
+  Thanks!*/
+
+/* Split the screen in half */
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+
+}
+a:hover{ 
+transform: scale(1.5);   
+}
+body, html{
+  background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(6.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+
+}
+.homepage{
+  width: 100%;
+  height: 100%;
+  position: static;
+  top: 0;
+
+}
+.left,.right{
+  position: static;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+
+}
+/* Control the left side */
+.left.act {
+  width: 20%;
+  /*background-color: #36b8ff;*/
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+
+}
+
+/* Control the right side */
+.center {
+  right: 9%;
+  width: 71%;
+  position: absolute;
+  height: 100%;
+  scroll-behavior: smooth;
+
+}
+
+.right.act {
+  width: 9%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  height: 100%;
+  /*background: #36b8ff;*/
+  /*border-left: 3px solid black;*/
+  color: black;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+
+}
+
+
+.s1,.s3,.s5,.s7,.s9{
+  height: 100%;
+
+  color: black;
+
+
+}
+.s2,.s4,.s6,.s8,.s10{
+  height: 100%;
+
+  color: black;
+
+}
+.s1{
+
+}
+.fh,.sh{
+  height: 50%;
+  /*background-color: #36b8ff;*/
+  color: black;
+  /*border-right: 3px solid black;*/
+
+
+}
+.fh{
+    text-align: center;
+  align-content: center;
+  align-items: center;
+padding-top: 20px;
+}
+.sh{
+  padding-top: 35px;
+}
+ol{
+  list-style-type: none; 
+}
+.nav{
+
+}
+a{
+ color:black ;
+ text-decoration: none;
+}
+.list{
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: -40px;
+  text-align: center;
+  margin-bottom: 4px;
+  
+}
+.listn{
+  margin-top: -35px;
+}
+.right.active{
+  /*background: white;*/
+  color: black;
+}
+a.active{
+  color: black;
+}
+.fh.active,.sh.active{
+    /*background: white;*/
+  color: black;
+}
+.ir{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+
+}
+/* Make sure that padding behaves as expected */
+
+* {box-sizing:border-box}
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 85%; background-color: #808080;} /* Dark Grey */
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 10%;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+@font-face{
+  font-family: 'janda';
+  src: url('2.ttf');
+}
+.s2{
+  margin-left: 100px;
+  max-width: 35em;
+  margin-top: 1em;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.s2 > p{
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-left: 75px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.s3{
+  margin-left: 100px;
+  max-width: 35em;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.s4, .s5, .s6, .s7, .s8, .s9{
+    margin-left: 100px;
+  max-width: 35em;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.s10{
+
+  margin-left: 100px;
+  max-width: 35em;
+  font-family: "Open-sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+.s4 > p, .s5 > p, .s6 > p, .s7 > p, .s8 > p, .s9 > p, .s10 > p{
+    margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: -25px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+.e1 > p{
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: -25px;
+}
+.e2 > p{
+   margin-bottom: 20px;
+  margin-top: -25px;
+  margin-left: 100px;
+}
+.e1{
+  text-align: left;
+}
+.e2{
+  text-align: left;
+}
+@font-face{
+  font-family: 'Helvetica';
+  src: url('c1.ttf');
+}
+
+@font-face{
+  font-family: 'Open-sans';
+  src: url('c.ttf');
+}
+
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+width:175px;
+  font-weight:bold;
+  font-size:15px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  float: right;
+}
+label{
+  float: left;
+  
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+margin-left: 370px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.containerc {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: black;
+  text-align: center;
+}
+
+.cid1:hover{ 
+transform: scale(1.2);   
+}
+
+.cid:hover{ 
+  animation: cid 1s infinite;
+  animation-timing-function: linear;   
+}
+.cid{
+  text-decoration: underline;
+}
+@keyframes cid {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);
+  100% { transform: scale(1); }
+  }
+}
+
